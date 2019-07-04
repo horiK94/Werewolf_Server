@@ -1,0 +1,23 @@
+{
+  "name": "werewolf_server",
+  "version": "1.0.0",
+  "description": "現在作成中のWerewolfのサーバー部分のみのレポジトリ(クライアント部分は有料アセットを使用しているため未公開)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horiK94/Werewolf_Server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/horiK94/Werewolf_Server/issues"
+  },
+  "homepage": "https://github.com/horiK94/Werewolf_Server#readme",
+  "dependencies": {
+    "socket.io": "^2.2.0"
+  }
+}
