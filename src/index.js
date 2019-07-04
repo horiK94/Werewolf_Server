@@ -1,11 +1,13 @@
-var io = require('socket.io')({
-	transports: ['websocket'],
+var app = require('express')();
+var http = require('http').createServer(app);
+var io = require('socket.io')(http);
+
+console.log("read code?");
+
+io.on('connection', function (socket) {
+  console.log('connection');
 });
 
-io.attach(4567);
-
-io.on('connection', function(socket){
-	socket.on('beep', function(){
-		socket.emit('boop');
-	});
-})
+http.listen(3000, function(){
+    console.log('listening on *:3000');
+});
