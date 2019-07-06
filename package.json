@@ -4,7 +4,7 @@
   "description": "現在作成中のWerewolfのサーバー部分のみのレポジトリ(クライアント部分は有料アセットを使用しているため未公開)",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
